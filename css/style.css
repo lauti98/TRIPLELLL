@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+/**//**//**//*NAV*//**//**//**//**//**//**/
+nav.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* establece un valor mayor que el del carrusel */
+    /* el resto de tus estilos... */
+  }
+
+.nav {
+    width: 100%;
+    position: fixed;
+    line-height: 4.0625rem;
+    text-align: center;
+}
+
+
+.nav div.logo img {
+    float: left;
+    width: 19.5rem;
+    height: 6.75rem;
+    padding-left: 3rem;
+    margin-top: .875rem;
+    margin-bottom: .3125rem;
+}
+
+.nav div.logo a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.nav div.logo a:hover {
+    color: orange;
+}
+
+.nav div.main_list {
+    height: 4.0625rem;
+    float: right;
+}
+
+.nav div.main_list ul {
+    width: 100%;
+    height: 4.0625rem;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    
+}
+
+.nav div.main_list ul li {
+    width: auto;
+    height: 4.0625rem;
+    padding: 0;
+    padding-right: 3rem;
+    font-weight: 500;
+    padding-top: 1rem;
+}
+
+.nav div.main_list ul li a {
+    text-decoration: none;
+    color: #fff;
+    line-height: 4.0625rem;
+    font-weight: 900;
+    font-size: 2.5625rem;
+    font-family: 'Mulish';
+    
+}
+
+.nav div.main_list ul li a:hover {
+    color: orange;
+
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+  }
+  .container1 a button{
+   font-size: 1.625rem;
+   font-weight: 900;
+   font-family: 'Mulish';
+ }
+  
+.navTrigger {
+    cursor: pointer;
+    width: 1.875rem;
+    height: 1.5625rem;
+    margin: auto;
+    position: absolute;
+    right: 1.875rem;
+    top: 0;
+    bottom: 0;
+}
+
+.navTrigger i {
+    background-color: #fff;
+    border-radius: .125rem;
+    content: '';
+    display: block;
+    width: 100%;
+    height: .25rem;
+}
+.affix {
+    padding: 0;
+    background-color: black;
+}
+.myH2 {
+	text-align:center;
+	font-size: 4rem;
+}
+.myP {
+	text-align: justify;
+	padding-left:15%;
+	padding-right:15%;
+	font-size: 1.25rem;
+}
+
+.navTrigger i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: .3125rem 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0rem) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(.5625rem) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(.5625rem) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0rem) rotate(0deg);
+    }
+    50% {
+        transform: translateY(.5625rem) rotate(0deg);
+    }
+    100% {
+        transform: translateY(.5625rem) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0rem) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(.5625rem) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(.5625rem) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0rem) rotate(0deg);
+    }
+    50% {
+        transform: translateY(.5625rem) rotate(0deg);
+    }
+    100% {
+        transform: translateY(.5625rem) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0rem) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-0.5625rem) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-0.5625rem) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0rem) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-0.5625rem) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-0.5625rem) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0rem) rotate(0deg);
+    }
+    50% {
+        -webkit-transform: translateY(-0.5625rem) rotate(0deg);
+    }
+    100% {
+        -webkit-transform: translateY(-0.5625rem) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0rem) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-0.5625rem) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-0.5625rem) rotate(135deg);
+    }
+}
+/* Home section */
+
+.home {
+    background-position: center top;
+	background-size:cover;
+}
+
+.navTrigger {
+    display: none;
+}
+
+.nav {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+
+/* Media qurey section */
+
+@media screen and (min-width: 30rem) and (max-width: 58.25rem) {
+    
+    body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    
+    }
+    .carousel-caption{
+        height: 63rem;
+        }  
+    .container {
+        margin: 0;
+    }
+    .contenedor{
+        width: 100%;
+    padding-left: .625rem;
+    padding-right: .625rem;
+    }
+    .container1 a button{
+        margin-left: -18.75rem;
+    }
+    #about .about-content {
+    overflow-y: scroll;
+    height: calc(60.25rem - 1.375rem); /* altura del contenedor menos la altura de la barra de progreso */
+}
+    body .section#quienes h2{
+    overflow-y: hidden;
+}
+    
+}
+
+@media screen and (max-width:48rem) {
+    #about .about-content {
+    overflow-y: scroll;
+    height: calc(60.25rem - 1.375rem); /* altura del contenedor menos la altura de la barra de progreso */
+}
+    *{
+         overflow-x: hidden;
+        
+    }
+    .navTrigger {
+       display: block;
+     
+        
+    }
+    .nav div.logo {
+        margin-left: 0rem;
+    }
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+    }
+    .nav div.show_list {
+        height: auto;
+        display: none;
+        
+    }
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 30vh;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background-color: black;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: right;
+       
+    }
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 2.2rem;
+        padding: 1rem;
+        font-family: 'Mulish';
+    }
+    .nav div.media_button {
+        display: block;
+        
+    }
+    .container1 a button{
+        padding-left: 11.75rem;
+        width: 10%;
+  
+    }
+   .carousel-caption{
+    height: 59rem;
+
+    }  
+    #about .row{
+        overflow-y: hiden;
+        height: 900;
+    }
+  
+}
+
+/**//**//**//*NAV CARUSELL*//**//**//**/
+#myCarouselCustom {
+    position: relative;
+    z-index: 1;}
+
+.carousel-caption{
+    margin-bottom: 3.125rem;
+}
+.carousel-caption h3{
+    font-size: 3.2rem;
+    font-family: 'Mulish';
+    font-weight: 900;
+    margin-bottom: 1.875rem;
+}
+.carousel-caption p{
+    font-family: 'Mulish, sans-serif';
+    font-size: 2.875rem;
+    font-weight: 900;
+    margin-bottom: 3.125rem;
+    letter-spacing: .1875rem;
+}
+.carousel-caption a button{
+    font-size: 1.5625rem;
+    font-family: 'Mulish, sans-serif';
+    border-color: none  ;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 5%;
+    width: 100%;
+    height: 6.25rem;
+    background-color: black;
+    
+}
+.carousel-caption a button:hover{
+    
+    background-color: rgba(0, 0, 0, 0.87);
+}
+/**//**//**//*SERVICIOS*//**//**//**//**//**/
+.container1 {
+   background-image: url(../img/Fondo4@4x\ \(1\).png);
+   background-color: black;
+   width: 100%;
+   height: 90rem;
+   background-repeat: no-repeat;
+    padding-top: 5.625rem;
+    padding-bottom: 4.375rem;
+   }
+  .container1 h2 {
+    font-size: 3.2rem;
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  
+  .service-content img {
+    margin-bottom: 1.875rem;
+  }
+  
+  .service h5 {
+    font-size: 2.5rem;
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: white;
+  }
+  
+  .service p {
+    font-size: 1.9rem;
+    font-family: 'Mulish';
+    font-weight: 400;
+    color: white;
+  }
+  .container1 h6 {
+    font-size: 2.2rem;
+    font-family: 'Mulish';
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding-bottom: 9.375rem;
+  }
+
+.container1 a button{
+    margin-left: 15.25rem;
+	position: relative;
+	float: none;
+	padding: 1.5625rem 1.625rem;
+	border-radius: .375rem;
+	width: 30%;
+	height: 5.4625rem;
+	margin-bottom: 3.75rem;
+	overflow: hidden;
+	color:black;
+	cursor: pointer;
+	letter-spacing: .125rem;
+	box-shadow:inset 0 0 0 .0625rem rgba(0,0,0,0.1);
+	text-decoration: none;
+	transition: all ease 0.9s;
+	background: rgba(255, 166, 0, 0.705);
+    text-align: center;
+    font-family: 'Mulish';
+    font-weight: 900;  
+    margin-right: 15.375rem;
+    
+
+}
+
+ 
+.container1 a button:after,
+.container1 a button:before{
+    
+	width: 50%;
+	height: 12.5rem;
+	content: '';
+	display: block;
+	background: rgba(255,255,255,0.5);
+	transform: rotate(45deg);
+	top: -3.75rem;
+	position: absolute;
+	transition: none;
+	right:-45%;
+	cursor: pointer;
+}
+ 
+.container1 a button:before{
+	left: -48%;
+}
+ 
+.container1 a button:hover{
+	text-shadow: 0 .0625rem .0625rem rgba(0,0,0,0.5);
+	background:black;
+    color: white;
+}
+ 
+.container1 a button:hover:after,
+.container1 a button:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgba(255,255,255,0.1);
+	transition: all ease 0.9s;
+}
+ 
+.container1 a button:hover:after{
+	right: 130%;
+}
+.container1 a button:hover:before{
+	left: 130%;
+}
+
+/*Precio de Gestion de Redes*/
+/**//**//**//**//**//**//**//**/
+
+#pricing {
+	padding: 2.5rem 0 120px 0;
+	background-color: rgba(238, 130, 238, 0.671);
+	text-align: center;
+    color: white;
+}
+
+#pricing .bottom {
+	width: 100%;
+	position: relative;
+	top: 7.5rem;
+}
+#pricing .price-title {
+	margin-bottom: 5rem;
+    font-size: 3rem;
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: black;
+}
+.value h2{
+    color: violet;
+}
+
+.per{
+    color: violet;
+}
+
+
+#pricing .price-table {
+	padding: 3.125rem .9375rem;
+	margin-bottom: 1.5625rem;
+	background: black;
+	-webkit-box-shadow: 0px .9375rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
+	box-shadow: 0px .3125rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
+	border-radius: .1875rem;
+
+}
+
+#pricing .price-table .type h5{
+	margin-bottom: .9375rem;
+    font-size: 2.25rem;
+    font-family: 'Mulish';
+    font-weight: 600;
+}
+
+
+#pricing .price-table .value {
+	margin-bottom: 1.875rem;
+}
+
+#pricing .price-table .value h2 {
+	font-size: 3.125rem;
+	position: relative;
+	display: inline-block;
+    font-size: 7rem;
+   
+}
+
+#pricing .price-table .value .dollar {
+	font-size: .75rem;
+	position: absolute;
+	top: 0;
+	left: -0.625rem;
+}
+
+#pricing .price-table .features ul {
+	padding-left: 0;
+	list-style: none;
+	margin-bottom: 7.875rem;
+}
+
+#pricing .price-table .features ul li {
+	margin-bottom: 2.75rem;
+    text-align: center;
+    font-family: 'Mulish';
+    font-weight: 700;
+}
+
+#pricing .price-table .features ul li span {
+	font-size: 1rem;
+	margin-right: 1.3125rem;
+}
+
+
+#pricing {
+	padding: 2.5rem 0 120px 0;
+	background-color: rgba(238, 130, 238, 0.671);
+	text-align: center;
+    color: white;
+}
+
+#pricing .bottom {
+	width: 100%;
+	position: relative;
+	top: 7.5rem;
+}
+#pricing .price-title {
+	margin-bottom: 5rem;
+    font-size: 3rem;
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: black;
+}
+.value h2{
+    color: violet;
+}
+
+.per{
+    color: violet;
+}
+/**//**//**//**//**//*BRANDING*//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**/
+
+#branding{
+    background-color: violet;
+    width: 100%;
+}
+#branding .container{
+    height: 85.25rem;
+
+}
+
+#branding h6{
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    margin-top: 8.775rem;
+}
+#branding .price-table {
+    text-align: center;
+	padding: 3.125rem .9375rem;
+	margin-bottom: 1.5625rem;
+	background: black;
+	-webkit-box-shadow: 0px .9375rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
+	box-shadow: 0px .3125rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
+	border-radius: .1875rem;
+
+}
+
+#branding .price-table .type h5{
+	margin-bottom: .9375rem;
+    font-size: 2.25rem;
+    font-family: 'Mulish';
+    font-weight: 600;
+    color: white;
+}
+
+#branding .features {
+    color: white;
+}
+#branding .price-table .value {
+	margin-bottom: 1.875rem;
+}
+
+#branding .price-table .value h2 {
+	font-size: 3.125rem;
+	position: relative;
+	display: inline-block;
+    font-size: 7rem;
+   
+}
+
+#branding .price-table .value .dollar {
+	font-size: .75rem;
+	position: absolute;
+	top: 0;
+	left: -0.625rem;
+}
+
+#branding .price-table .features ul {
+	padding-left: 0;
+	list-style: none;
+	margin-bottom: 7.875rem;
+}
+
+#branding .price-table .features ul li {
+	margin-bottom: 2.75rem;
+    text-align: center;
+    font-family: 'Mulish';
+    font-weight: 700;
+}
+
+#branding .price-table .features ul li span {
+	font-size: 1rem;
+	margin-right: 1.3125rem;
+}
+/**//**//**//**//*QUIENES SOMOS*//*/**//**//**//**//**/
+
+#quienes img{
+    height: 300px;
+    width: 500px;
+}
+#quienes .progress {
+    height: 1.4875rem;
+    width: 100%;
+    border: 1px solid black  ;
+    border-radius: 5px;
+    background-color:white;
+    margin-bottom: 15px;
+}
+ 
+#quienes .progress-bar {
+    height: 100%;
+    background: orange;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+ 
+#quienes .progress-bar-text {
+    margin-left: 10px;
+    font-weight: 900;
+    color: black;
+    font-family: 'Mulish','sans serif';
+}
+#quienes  h2{
+    font-size: 2.25rem;
+    font-family:'Mulish','sans serif';
+    font-weight: 900;
+}
+
+  
+  
+
+  
+  
+
+
+
+
+  
