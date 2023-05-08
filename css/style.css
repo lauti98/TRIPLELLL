@@ -346,6 +346,16 @@ nav.nav {
 }
 
 @media screen and (max-width:48rem) {
+    body section#servicios{
+        block-size: auto;
+        height: 90rem;
+        overflow-y: hidden ;
+        overflow-x: hidden;
+    }
+    body .section#quienes{
+        height: 100%;
+        overflow: hidden;
+    }
     #about .about-content {
     overflow-y: scroll;
     height: calc(60.25rem - 1.375rem); /* altura del contenedor menos la altura de la barra de progreso */
