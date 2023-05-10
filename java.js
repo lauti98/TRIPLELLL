@@ -54,7 +54,6 @@ $("#nextBtn").click(function(){
             });
 
 
-
             function isElementInViewport(el) {
               var rect = el.getBoundingClientRect();
               return (
