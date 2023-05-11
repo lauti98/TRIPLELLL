@@ -426,6 +426,9 @@ nav.nav {
         overflow-y: hiden;
         height: 900;
     }
+    #dw .container{
+      width: 92%;
+    }
   
 }
 
@@ -692,85 +695,7 @@ nav.nav {
 .per{
     color: violet;
 }
-/**//**//**//**//**//*BRANDING*//**//**//**//**//**/
-/**//**//**//**//**//**//**//**//**//**//**//**//**/
-/**//**//**//**//**//**//**//**//**//**//**//**//**/
 
-#branding{
-    background-color: violet;
-    width: 100%;
-}
-#branding .container{
-    height: 100%;
-}
-
-#branding h6{
-    margin-bottom: 5rem;
-    font-size: 3rem;
-    font-family: 'Mulish';
-    font-weight: 900;
-    color: black;
-    text-align: center;
-    margin-top: 8.775rem;
-}
-#branding .price-table {
-    text-align: center;
-	padding: 3.125rem .9375rem;
-	margin-bottom: 1.5625rem;
-	background: black;
-	-webkit-box-shadow: 0px .9375rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
-	box-shadow: 0px .3125rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
-	border-radius: .1875rem;
-
-}
-
-#branding .price-table .type h5{
-	margin-bottom: .9375rem;
-    font-size: 2.25rem;
-    font-family: 'Mulish';
-    font-weight: 600;
-    color: white;
-}
-
-#branding .features {
-    color: white;
-}
-#branding .price-table .value {
-	margin-bottom: 1.875rem;
-}
-
-#branding .price-table .value h2 {
-	font-size: 3.125rem;
-	position: relative;
-	display: inline-block;
-    font-size: 7rem;
-   
-}
-
-#branding .price-table .value .dollar {
-	font-size: .75rem;
-	position: absolute;
-	top: 0;
-	left: -0.625rem;
-}
-
-#branding .price-table .features ul {
-	padding-left: 0;
-	list-style: none;
-	margin-bottom: 7.875rem;
-}
-
-#branding .price-table .features ul li {
-	margin-bottom: 2.75rem;
-    text-align: center;
-    font-family: 'Mulish';
-    font-weight: 700;
-}
-
-#branding .price-table .features ul li span {
-	font-size: 1rem;
-	margin-right: 1.3125rem;
-}
 /**//**//**//**//*QUIENES SOMOS*//*/**//**//**//**//**/
 #quienes .container{
     height: 100%;
@@ -842,7 +767,422 @@ nav.nav {
     font-family: 'Mulish';
     font-weight: 300;
 }
+/**//**//**//**//**//*BRANDING*//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**/
+/**//**//**//**//**//**//**//**//**//**//**//**//**/
 
+#branding{
+    background-color: violet;
+    }
+#branding .container{
+    height: 100%;
+    }
+
+#branding h6{
+   
+    font-size: 3rem;
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: black;
+    margin-top: 4.775rem;
+    text-align: center;
+}
+#branding .price-table {
+    text-align: center;
+	padding: 3.125rem .9375rem;
+	background: black;
+	-webkit-box-shadow: 0px .9375rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
+	box-shadow: 0px .3125rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
+	border-radius: .1875rem;
+    max-width: 750px; /* establece el ancho máximo de 750px */
+    margin: 7.5625rem auto; /* centra la sección horizontalmente en la página */
+    padding: 50px 10px; /* agrega un padding de 10px en los lados izquierdo y derecho */
+}
+
+
+#branding .price-table .type h5{
+	margin-bottom: .9375rem;
+    font-size: 2.25rem;
+    font-family: 'Mulish';
+    font-weight: 600;
+    color: white;
+}
+
+#branding .features {
+    color: white;
+}
+#branding .price-table .value {
+	margin-bottom: 1.875rem;
+}
+
+#branding .price-table .value h2 {
+	font-size: 3.125rem;
+	position: relative;
+	display: inline-block;
+    font-size: 7rem;
+   
+}
+
+#branding .price-table .value .dollar {
+	font-size: .75rem;
+	position: absolute;
+	top: 0;
+	left: -0.625rem;
+}
+
+#branding .price-table .features ul {
+	padding-left: 0;
+	list-style: none;
+	margin-bottom: 7.875rem;
+}
+
+#branding .price-table .features ul li {
+	margin-bottom: 2.75rem;
+    text-align: center;
+    font-family: 'Mulish';
+    font-weight: 700;
+}
+
+#branding .price-table .features ul li span {
+	font-size: 1rem;
+	margin-right: 1.3125rem;
+}
+/**//**//**//**//**//**//*DESAROLLO WEB*//**//**//**//**//**//**//**//**/
+#dw{
+    background-color:rgba(238, 130, 238, 0.575);
+    padding: 2.5rem 0 120px 0;
+}
+#dw .container {
+	padding: 2.5rem 0 7.5rem 0;
+	text-align: center;
+    color: white;
+}
+
+#dw .bottom {
+	width: 100%;
+	position: relative;
+	top: 7.5rem;
+}
+#dw .price-title {
+	margin-bottom: 5rem;
+    font-size: 3rem;
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: black;
+}
+#dw .price-table {
+	padding: 3.125rem .9375rem;
+	margin-bottom: 1.5625rem;
+	background: black;
+	-webkit-box-shadow: 0px .9375rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
+	box-shadow: 0px .3125rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
+	border-radius: .1875rem;
+
+}
+
+#dw .price-table .type h5{
+	margin-bottom: .9375rem;
+    font-size: 2.25rem;
+    font-family: 'Mulish';
+    font-weight: 600;
+}
+
+
+#dw .price-table .value {
+	margin-bottom: 1.875rem;
+}
+
+#dw .price-table .value h2 {
+	font-size: 3.125rem;
+	position: relative;
+	display: inline-block;
+    font-size: 7rem;
+   
+}
+
+#dw .price-table .value .dollar {
+	font-size: .75rem;
+	position: absolute;
+	top: 0;
+	left: -0.625rem;
+}
+
+#dw .price-table .features ul {
+	padding-left: 0;
+	list-style: none;
+	margin-bottom: 7.875rem;
+}
+
+#dw .price-table .features ul li {
+	margin-bottom: 2.75rem;
+    text-align: center;
+    font-family: 'Mulish';
+    font-weight: 700;
+}
+
+#dw .price-table .features ul li span {
+	font-size: 1rem;
+	margin-right: 1.3125rem;
+}
+
+
+#dw .bottom {
+	width: 100%;
+	position: relative;
+	top: 7.5rem;
+}
+#dw .price-title {
+	margin-bottom: 5rem;
+    font-size: 3rem;
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: black;
+}
+.value h2{
+    color: violet;
+}
+
+.per{
+    color: violet;
+}
+/**//**//**//**//**//**//**//*TEAM*//**//**//**//**//**//**//**//**//**//**/
+#team {
+    background-color: black;
+    padding: 3.75rem 0;
+  }
+  #team h2{
+    text-align: center;
+    margin-bottom:  2.9375rem;
+    font-size: 3.2rem;
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: white;
+    position: relative;
+    
+  }
+  #team .container p{
+    text-align: center;
+    margin-bottom: 9.625rem;
+    font-size: 1.97rem;
+    font-family: 'Mulish','sans serif';
+    color: white;
+    font-size: 1.450rem;
+    font-family: 'Mulish';
+    font-weight: 300;
+  }
+  
+  .team-member {
+    text-align: center;
+  }
+  
+  .team-member img {
+    margin-bottom: 1.875rem;
+    height: 22.5rem;
+    width: 22.5rem;
+    border: .3125rem solid white;
+    border-radius: 50%;
+    margin-bottom: 5.625rem;
+  }
+  #team .container .team-member p{
+    margin-bottom: 6.5625rem; 
+  }
+  
+  .team-member h3 {
+    margin-top: 0;
+    margin-bottom: 1.625rem;
+    font-size: 3.2rem;
+    font-family: 'Mulish';
+    font-weight: 900;
+    color: white;
+  }
+  
+  
+  .social-links a {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .social-links a:last-child {
+    margin-right: 0;
+  }
+  
+  .social-links i {
+    font-size: 30px;
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+  
+  .social-links i:hover {
+    color: black;
+  }
+ 
+  /*=======================================================
+			PORTFOLIO:
+========================================================*/
+#portfolio {
+	background: #f5f5f7;
+	padding: 40px 0 0 0;
+	text-align: center;
+    background-color: orange;
+}
+
+#portfolio .svg-wave {
+	width: 100%;
+	position: relative;
+	bottom: 60px;
+    background-color: black;
+    height: 50px;
+}
+
+#portfolio .svg-wave svg {
+	background: black;
+	width: 100%;
+	height: auto;
+}
+
+#portfolio .svg-wave svg path {
+	fill:orange;
+}
+#portfolio h2{
+    background-color: orange;
+}
+#portfolio h2:after {
+	top: -23px;
+	content: "";
+	position: relative;
+	left: 50%;
+	bottom: 0;
+	width: 300px;
+	height: 4px;
+	display: block;
+	background-color: #ad67ea;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	border-radius: 100px;
+
+}
+
+#portfolio .row {
+	margin-top: 80px;
+}
+
+#portfolio .portfolio-item {
+	position: relative;
+	padding: 0;
+}
+
+#portfolio .portfolio-item .item-img {
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+#portfolio .portfolio-item .item-img img {
+	width: 100%;
+	height: auto;
+}
+
+#portfolio .portfolio-item .item-info {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(173, 103, 234, 0.7);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column;
+	flex-flow: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	opacity: 0;
+	-webkit-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+}
+
+#portfolio .portfolio-item .item-info .heading-3 {
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	margin: 0;
+	-webkit-transform: translate(0%, 100%);
+	transform: translate(0%, 100%);
+	-webkit-transition: 0.6s cubic-bezier(0.46, -0.11, 0.21, 1.68) 0.1s;
+	transition: 0.6s cubic-bezier(0.46, -0.11, 0.21, 1.68) 0.1s;
+	opacity: 0;
+}
+
+#portfolio .portfolio-item .item-info .p-text {
+	font-size: 12px;
+	max-width: 210px;
+	width: 100%;
+	line-height: 18px;
+	color: #fff;
+	margin: 18px auto;
+	letter-spacing: 1px;
+	-webkit-transform: translate(0%, 50%);
+	transform: translate(0%, 50%);
+	-webkit-transition: 0.6s cubic-bezier(0.46, -0.11, 0.21, 1.68) 0.2s;
+	transition: 0.6s cubic-bezier(0.46, -0.11, 0.21, 1.68) 0.2s;
+	opacity: 0;
+}
+
+#portfolio .portfolio-item .item-info .link-text {
+	font-size: 12px;
+	color: #fff;
+	position: relative;
+	text-decoration: none;
+	font-weight: 700;
+	-webkit-transform: translate(0%, 100%);
+	transform: translate(0%, 100%);
+	-webkit-transition: 0.6s cubic-bezier(0.46, -0.11, 0.21, 1.68) 0.3s;
+	transition: 0.6s cubic-bezier(0.46, -0.11, 0.21, 1.68) 0.3s;
+	opacity: 0;
+}
+
+#portfolio .portfolio-item .item-info .link-text:before {
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color: #8aecec;
+	display: block;
+	position: absolute;
+	border-radius: 100px;
+	bottom: -6px;
+	left: 5px;
+}
+
+#portfolio .portfolio-item:hover .item-info {
+	opacity: 1;
+}
+
+#portfolio .portfolio-item:hover .item-info .heading-3 {
+	opacity: 1;
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+#portfolio .portfolio-item:hover .item-info .p-text {
+	opacity: 1;
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+#portfolio .portfolio-item:hover .item-info .link-text {
+	opacity: 1;
+	-webkit-transform: translate(0, 0);
+	transform: translate(0, 0);
+}
+
+  
+  
   
   
 
