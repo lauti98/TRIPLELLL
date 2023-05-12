@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -85,11 +84,6 @@ nav.nav {
     opacity: 0;
     transition: opacity 0.4s ease-out;
   }
-  .container1 a button{
-   font-size: 1.625rem;
-   font-weight: 900;
-   font-family: 'Mulish';
- }
   
 .navTrigger {
     cursor: pointer;
@@ -389,7 +383,7 @@ nav.nav {
     .nav div.main_list ul {
         flex-direction: column;
         width: 100%;
-        height: 30vh;
+        height: 15vh;
         right: 0;
         left: 0;
         bottom: 0;
@@ -428,6 +422,9 @@ nav.nav {
     }
     #dw .container{
       width: 92%;
+    }
+    .svg-wave{
+        display: none;
     }
   
 }
@@ -472,7 +469,6 @@ nav.nav {
 }
 /**//**//**//*SERVICIOS*//**//**//**//**//**/
 .container1 {
-   background-image: url(../img/Fondo4@4x\ \(1\).png);
    background-color: black;
    width: 100%;
    height: 100%;
@@ -487,6 +483,11 @@ nav.nav {
     color: white;
     text-align: center;
     padding-bottom: 2rem;
+  }
+  .container1 a button{
+    font-size: 1.625rem;
+    font-weight: 900;
+    font-family: 'Mulish';
   }
 
   
@@ -581,45 +582,141 @@ nav.nav {
 .container1 a button:hover:before{
 	left: 130%;
 }
+#servicios .svg-wave {
+	width: 100%;
+	position: relative;
+	bottom: 60px;
+    background-color: black;
+    height: 40px;
+}
+
+#servcios .svg-wave svg {
+	background: black;
+	width: 100%;
+    height: auto;
+
+}
+
+#servicios .svg-wave svg path {
+	fill:orange;
+    height: 51px;
+}
+#servicios h2{
+    background-color: orange;
+}
+/**//**//**//**//*QUIENES SOMOS*//*/**//**//**//**//**/
+#quienes .container2{
+    height: 90rem;
+    padding-top: 3.125rem;
+}
+#quienes img{
+    height: 50.75rem;
+    width: 50.75rem;
+    padding-left: 1.75rem;
+}
+#quienes .progress {
+    height: 1.4875rem;
+    width: 100%;
+    border: 1px solid black  ;
+    border-radius: 5px;
+    background-color:white;
+    margin-bottom: 15px;
+}
+ 
+#quienes .progress-bar {
+    height: 100%;
+    background: orange;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}
+ 
+#quienes .progress-bar-text {
+    margin-left: .625rem;
+    font-weight: 900;
+    color: black;
+    font-family: 'Mulish','sans serif';
+}
+#quienes .container2  h2{
+    font-size: 2.25rem;
+    font-family:'Mulish','sans serif';
+    font-weight: 900;
+}
+#quienes .container2 h3{
+    font-size: 3.0625rem;
+    font-family: 'Mulish','sans serif';
+    font-weight: 800;
+    color: black;
+    text-align: center;
+    margin-bottom: 3.125rem;
+}
+#quienes .container2 p{
+    color: black;
+    font-size: 1.45rem;
+    font-family: 'Mulish';
+    font-weight: 300;
+}
+#features .container3{
+    padding-top: 7.5rem;
+    text-align: center;
+}
+#features .container3 h4{
+    font-size: 2.0625rem;
+    font-family: 'Mulish','sans serif';
+    font-weight: 800;
+    color: black;
+}
+#features .container3 span{
+    font-size: 11.875rem;
+    text-align: right;
+    color:white;
+}
+#features .container3 p{
+    color: black;
+    font-size: 1.45rem;
+    font-family: 'Mulish';
+    font-weight: 300;
+   
+}
+#quienes .svg-wave {
+	position: relative;
+	bottom: 60px;
+    background-color: orangered;
+    height: 70px;
+}
+
+#quienes .svg-wave svg {
+	background: orangered;
+	width: 100%;
+	height: auto;
+}
+
+#quienes .svg-wave svg path {
+	fill:violet;
+   
+}
+
 
 /*Precio de Gestion de Redes*/
 /**//**//**//**//**//**//**//**/
 
 #pricing {
 	padding: 2.5rem 0 7.5rem 0;
-	background-color: rgba(238, 130, 238, 0.671);
+	background-color:   violet;
 	text-align: center;
+    height: 100%;
     color: white;
 }
 
-#pricing .bottom {
-	width: 100%;
-	position: relative;
-	top: 7.5rem;
-}
-#pricing .price-title {
-	margin-bottom: 5rem;
-    font-size: 3rem;
-    font-family: 'Mulish';
-    font-weight: 900;
-    color: black;
-}
-.value h2{
-    color: violet;
-}
-
-.per{
-    color: violet;
-}
-
-
 #pricing .price-table {
 	padding: 3.125rem .9375rem;
-	margin-bottom: 1.5625rem;
+	margin-bottom: 4.5625rem;
 	background: black;
 	-webkit-box-shadow: 0px .9375rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
 	box-shadow: 0px .3125rem 2.5rem -0.3125rem rgba(0, 0, 0, 0.1);
 	border-radius: .1875rem;
+    
 
 }
 
@@ -671,22 +768,18 @@ nav.nav {
 
 #pricing {
 	padding: 2.5rem 0 120px 0;
-	background-color: rgba(238, 130, 238, 0.671);
+	background-color:violet;
 	text-align: center;
-    color: white;
 }
 
-#pricing .bottom {
-	width: 100%;
-	position: relative;
-	top: 7.5rem;
-}
 #pricing .price-title {
-	margin-bottom: 5rem;
+	padding-bottom: 2rem;
     font-size: 3rem;
     font-family: 'Mulish';
     font-weight: 900;
     color: black;
+    background-color: orange;
+    margin-bottom: 8.125rem;
 }
 .value h2{
     color: violet;
@@ -696,96 +789,44 @@ nav.nav {
     color: violet;
 }
 
-/**//**//**//**//*QUIENES SOMOS*//*/**//**//**//**//**/
-#quienes .container{
-    height: 100%;
-    padding-top: 100px;
+#pricing .svg-wave svg path {
+	fill:orange;
 }
-#quienes img{
-    height: 300px;
-    width: 500px;
+#pricing .svg-wave {
+	width: 100%;
+	position: relative;
+	bottom: 60px;
+    background-color: violet;
+    height: 50px;
 }
-#quienes .progress {
-    height: 1.4875rem;
-    width: 100%;
-    border: 1px solid black  ;
-    border-radius: 5px;
-    background-color:white;
-    margin-bottom: 15px;
+
+#pricing .svg-wave svg {
+	background: violet;
+	width: 100%;
+	height: auto;
 }
- 
-#quienes .progress-bar {
-    height: 100%;
-    background: orange;
-    display: flex;
-    align-items: center;
-    transition: width 0.25s;
-    border-radius: 5px;
+
+#pricing .svg-wave svg path {
+	fill:orange;
 }
- 
-#quienes .progress-bar-text {
-    margin-left: 10px;
-    font-weight: 900;
-    color: black;
-    font-family: 'Mulish','sans serif';
-}
-#quienes  h2{
-    font-size: 2.25rem;
-    font-family:'Mulish','sans serif';
-    font-weight: 900;
-}
-#quienes h3{
-    font-size: 2.0625rem;
-    font-family: 'Mulish','sans serif';
-    font-weight: 800;
-    color: black;
-    text-align: center;
-}
-#quienes p{
-    color: black;
-    font-size: 1.450rem;
-    font-family: 'Mulish';
-    font-weight: 300;
-}
-#features .container{
-    padding-top: 7.5rem;
-}
-#features .container h4{
-    font-size: 2.0625rem;
-    font-family: 'Mulish','sans serif';
-    font-weight: 800;
-    color: black;
-}
-#features .container span{
-    font-size: 10.875rem;
-    text-align: right;
-    color:black;
-}
-#features .container p{
-    color: black;
-    font-size: 1.450rem;
-    font-family: 'Mulish';
-    font-weight: 300;
-}
+
+
 /**//**//**//**//**//*BRANDING*//**//**//**//**//**/
 /**//**//**//**//**//**//**//**//**//**//**//**//**/
 /**//**//**//**//**//**//**//**//**//**//**//**//**/
 
 #branding{
     background-color: violet;
-    }
-#branding .container{
     height: 100%;
     }
 
 #branding h6{
-   
-    font-size: 3rem;
+    font-size: 4rem;
     font-family: 'Mulish';
     font-weight: 900;
     color: black;
-    margin-top: 4.775rem;
     text-align: center;
+    margin-top: -50px;
 }
 #branding .price-table {
     text-align: center;
@@ -796,7 +837,7 @@ nav.nav {
 	border-radius: .1875rem;
     max-width: 750px; /* establece el ancho máximo de 750px */
     margin: 7.5625rem auto; /* centra la sección horizontalmente en la página */
-    padding: 50px 10px; /* agrega un padding de 10px en los lados izquierdo y derecho */
+    padding: 3.125rem .625rem; /* agrega un padding de 10px en los lados izquierdo y derecho */
 }
 
 
@@ -810,6 +851,7 @@ nav.nav {
 
 #branding .features {
     color: white;
+
 }
 #branding .price-table .value {
 	margin-bottom: 1.875rem;
@@ -849,10 +891,11 @@ nav.nav {
 }
 /**//**//**//**//**//**//*DESAROLLO WEB*//**//**//**//**//**//**//**//**/
 #dw{
-    background-color:rgba(238, 130, 238, 0.575);
+    background-color: violet;
     padding: 2.5rem 0 120px 0;
+    height: 100%;
 }
-#dw .container {
+#dw .container3 {
 	padding: 2.5rem 0 7.5rem 0;
 	text-align: center;
     color: white;
@@ -949,6 +992,7 @@ nav.nav {
 #team {
     background-color: black;
     padding: 3.75rem 0;
+    height: 999px;
   }
   #team h2{
     text-align: center;
@@ -960,13 +1004,13 @@ nav.nav {
     position: relative;
     
   }
-  #team .container p{
+  #team .containerr p{
     text-align: center;
     margin-bottom: 9.625rem;
     font-size: 1.97rem;
     font-family: 'Mulish','sans serif';
     color: white;
-    font-size: 1.450rem;
+    font-size: 1.45rem;
     font-family: 'Mulish';
     font-weight: 300;
   }
@@ -983,7 +1027,7 @@ nav.nav {
     border-radius: 50%;
     margin-bottom: 5.625rem;
   }
-  #team .container .team-member p{
+  #team .containerr .team-member p{
     margin-bottom: 6.5625rem; 
   }
   
@@ -1015,7 +1059,24 @@ nav.nav {
   .social-links i:hover {
     color: black;
   }
- 
+  #team .svg-wave1 {
+	position: relative;
+	bottom: 60px;
+    background-color: orange;
+    height: 50px;
+}
+
+#team .svg-wave1 svg {
+	background: white;
+	width: 100%;
+	height: auto;
+}
+
+#team .svg-wave1 svg path {
+	fill:black;
+   
+}
+
   /*=======================================================
 			PORTFOLIO:
 ========================================================*/
@@ -1031,7 +1092,7 @@ nav.nav {
 	position: relative;
 	bottom: 60px;
     background-color: black;
-    height: 50px;
+    height: 1px;
 }
 
 #portfolio .svg-wave svg {
@@ -1042,25 +1103,18 @@ nav.nav {
 
 #portfolio .svg-wave svg path {
 	fill:orange;
+    
 }
 #portfolio h2{
     background-color: orange;
-}
-#portfolio h2:after {
-	top: -23px;
-	content: "";
+    font-size: 3.125rem;
 	position: relative;
-	left: 50%;
-	bottom: 0;
-	width: 300px;
-	height: 4px;
-	display: block;
-	background-color: #ad67ea;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
-	border-radius: 100px;
-
+    margin-top: 10.25rem;
+    color: white;
+    font-family: 'Mulish','sans serif';
+    font-weight: 900;
 }
+
 
 #portfolio .row {
 	margin-top: 80px;
