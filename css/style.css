@@ -338,6 +338,7 @@ nav.nav {
     body .section#quienes h2{
     overflow-y: hidden;
 }
+
     
 }
 
@@ -426,6 +427,10 @@ nav.nav {
     .svg-wave{
         display: none;
     }
+    #servicios .container1 h2{
+        background-color: black;
+    }
+   
   
 }
 
@@ -468,7 +473,7 @@ nav.nav {
     background-color: rgba(0, 0, 0, 0.87);
 }
 /**//**//**//*SERVICIOS*//**//**//**//**//**/
-.container1 {
+#servicios .container1 {
    background-color: black;
    width: 100%;
    height: 100%;
@@ -476,7 +481,7 @@ nav.nav {
     padding-top: 5.625rem;
     padding-bottom: 4.375rem;
    }
-  .container1 h2 {
+   #servicios .container1 h2 {
     font-size: 3.2rem;
     font-family: 'Mulish';
     font-weight: 900;
@@ -484,7 +489,7 @@ nav.nav {
     text-align: center;
     padding-bottom: 2rem;
   }
-  .container1 a button{
+  #servicios .container1 a button{
     font-size: 1.625rem;
     font-weight: 900;
     font-family: 'Mulish';
@@ -508,7 +513,7 @@ nav.nav {
     font-weight: 400;
     color: white;
   }
-  .container1 h6 {
+  #servicios .container1 h6 {
     font-size: 2.2rem;
     font-family: 'Mulish';
     font-weight: 700;
@@ -517,7 +522,7 @@ nav.nav {
     padding-bottom: 9.375rem;
   }
 
-.container1 a button{
+  #servicios .container1 a button{
     margin-left: 15.25rem;
 	position: relative;
 	float: none;
@@ -543,8 +548,8 @@ nav.nav {
 }
 
  
-.container1 a button:after,
-.container1 a button:before{
+#servicios .container1 a button:after,
+#servicios .container1 a button:before{
     
 	width: 50%;
 	height: 12.5rem;
@@ -559,27 +564,27 @@ nav.nav {
 	cursor: pointer;
 }
  
-.container1 a button:before{
+#servicios .container1 a button:before{
 	left: -48%;
 }
  
-.container1 a button:hover{
+#servicios .container1 a button:hover{
 	text-shadow: 0 .0625rem .0625rem rgba(0,0,0,0.5);
 	background:black;
     color: white;
 }
  
-.container1 a button:hover:after,
-.container1 a button:hover:before{
+#servicios .container1 a button:hover:after,
+#servicios .container1 a button:hover:before{
 	transform: rotate(45deg), scaleX(130%);
 	background: rgba(255,255,255,0.1);
 	transition: all ease 0.9s;
 }
  
-.container1 a button:hover:after{
+#servicios .container1 a button:hover:after{
 	right: 130%;
 }
-.container1 a button:hover:before{
+#servicios .container1 a button:hover:before{
 	left: 130%;
 }
 #servicios .svg-wave {
