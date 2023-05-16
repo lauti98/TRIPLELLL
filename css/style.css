@@ -430,6 +430,9 @@ nav.nav {
     #servicios .container1 h2{
         background-color: black;
     }
+    #quienes .aa img{
+        margin-left: -10px;
+    }
    
   
 }
@@ -611,13 +614,13 @@ nav.nav {
 }
 /**//**//**//**//*QUIENES SOMOS*//*/**//**//**//**//**/
 #quienes .container2{
-    height: 90rem;
+    height: 95rem;
     padding-top: 3.125rem;
 }
 #quienes img{
     height: 50.75rem;
     width: 50.75rem;
-    padding-left: 1.75rem;
+    margin-left: 10.75rem;
 }
 #quienes .progress {
     height: 1.4875rem;
@@ -1072,7 +1075,7 @@ nav.nav {
 }
 
 #team .svg-wave1 svg {
-	background: white;
+	background: violet;
 	width: 100%;
 	height: auto;
 }
@@ -1239,6 +1242,119 @@ nav.nav {
 	-webkit-transform: translate(0, 0);
 	transform: translate(0, 0);
 }
+
+/**//**//**//**//*/**//**//*FOOTER*//**//**//**//**//**//**//**//**//**//**//**/
+    footer{
+    width: 100%;
+    height: 40rem;
+    }
+    .foter {
+    width: 100%;
+    height: 100%;
+    display: flex;
+     align-items: center;
+     background-color: black;
+     }
+   .foter:hover {
+     pointer-events: auto;
+   }
+   .sm-header {
+     font-size: 2.6rem;
+     text-transform: uppercase;
+     cursor: pointer;
+     color: white;
+     padding-left: 1.625rem;
+   }
+   .line {
+     width: 5rem;
+     height: 0.2rem;
+     background-color:  white;
+     margin-left: 0.8rem;
+     margin-right: .1125rem;
+     transform: scaleX(0.2);
+     transform-origin: left;
+     transition: transform 0.5s;
+   
+   }
+   .foter:hover .line {
+     transform: scaleX(1);
+   }
+   .foter-list {
+     display: flex;
+     list-style: none;
+   }
+   .foter-item {
+     margin-inline: 1.2rem;
+     opacity: 0;
+     transition: transform 0.5s, opacity 0.5s;
+   }
+   .foter-item:nth-child(odd) {
+     transform: translateY(5rem);
+   }
+   .foter-item:nth-child(even) {
+     transform: translateY(-5rem);
+   }
+   .foter:hover .foter-item {
+     opacity: 1;
+     transform: translateY(0);
+   }
+   .foter-link {
+     font-size: 3.6rem;
+     color:white;
+   }
+   .foter-link i {
+     transition: color 0.5s;
+   }
+   .foter-link:hover i.fa-facebook-f {
+     color: orange;
+   }
+   .foter-link:hover i.fa-twitter {
+     color: orange;
+   }
+   .foter-link:hover i.fa-google-plus-g { 
+     color: orange;
+   }
+   .foter-link:hover i.fa-dribbble {
+     color: orange;
+   }
+   .foter-link:hover i.fa-linkedin-in {
+     color: orange;
+   }
+   footer div img{
+    height: 100px;
+    width: 200px;
+   }
+   @media (max-width: 480px) {
+     .foter {
+       flex-direction: column; /* Cambia la dirección de los elementos a columna */
+       align-items: flex-start; /* Alinea los elementos a la izquierda */
+       
+       
+     }
+     .line{
+       margin-top: -0.25rem;
+       width: 10.125rem;
+       margin-left: 1.125rem;
+     }
+   
+     .foter-list {
+       display: flex; /* Cambia a una visualización flex */
+       flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+       justify-content: center; /* Centra los elementos horizontalmente */
+       margin-top: 1rem; /* Agrega un margen superior a la lista */
+    
+     }
+   
+     .foter-item {
+       margin-inline: 1.9rem; /* Elimina el margen horizontal de los elementos */
+       transform: translateY(0); /* Restablece la posición vertical de los elementos */
+       margin-left: -1.5rem;
+       padding-right: 0.5125rem;
+      
+     }
+   
+   }
+   
 
   
   
